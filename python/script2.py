@@ -32,7 +32,7 @@ driver = webdriver.Chrome(options=chrome_options)
 
 # Step 1: Open the window/browser
 # driver = webdriver.Chrome()  # or use Edge/Firefox depending on your setup
-driver.get("https://www.coursera.org/learn/agile-development-and-scrum/assignment-submission/FJ6oK/practice-quiz/attempt")
+driver.get("https://www.coursera.org/learn/agile-development-and-scrum/assignment-submission/BLj7B/practice-quiz/attempt")
 time.sleep(10)
 
 # # Scroll randomly
