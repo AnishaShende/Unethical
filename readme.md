@@ -2,6 +2,16 @@
 
 This project allows you to automate the process of answering Coursera quizzes using the Gemini model. It extracts multiple-choice questions (MCQs) from the quiz, sends them to the Gemini API for answers, selects the correct options on the page, and submits the quiz.
 
+---
+
+### Video Demo:
+
+Here's a quick demonstration of how the Coursera Quiz Solver works:
+
+https://github.com/AnishaShende/Unethical/blob/578c464a4d2d721ba58215c1abaa2f1cb9ab7bcd/assets/Screen%20Recording%202025-04-16%20014258%20(1).mp4
+
+---
+
 ### Prerequisites:
 
 - **Python 3.x**
