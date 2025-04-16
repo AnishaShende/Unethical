@@ -1,3 +1,5 @@
+### For quiz
+
 import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -32,7 +34,7 @@ driver = webdriver.Chrome(options=chrome_options)
 
 # Step 1: Open the window/browser
 # driver = webdriver.Chrome()  # or use Edge/Firefox depending on your setup
-driver.get("https://www.coursera.org/learn/agile-development-and-scrum/assignment-submission/BLj7B/practice-quiz/attempt")
+driver.get("https://www.coursera.org/learn/python-for-applied-data-science-ai/assignment-submission/kzCcY/practice-quiz-loops/attempt")
 time.sleep(10)
 
 # # Scroll randomly
@@ -124,8 +126,8 @@ for block in question_blocks:
         continue
 
 # Display the extracted data
-print("\nExtracted Questions:")
-print(json.dumps(questions_data, indent=2, ensure_ascii=False))
+# print("\nExtracted Questions:")
+# print(json.dumps(questions_data, indent=2, ensure_ascii=False))
 
 # Step 5: Send to LLM (example using requests)
 import requests
@@ -135,7 +137,7 @@ api_key = os.getenv("GEMINI_API_KEY")  # Replace with your actual key
 # gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
 def ask_gemini(question_text, options_list, api_key):
-    prompt = f"""You are a helpful assistant. Choose the most appropriate answer.
+    prompt = f"""You are a helpful assistant. Choose the most appropriate answer. Don't give any explanations only correct answer from the given options. Always give the complete and correct option text in the answer like for example: 3. Loop or 1. It contains multiple services that coordinate interactions using a communication protocol such as HTTP.
 Question: {question_text}
 Options:"""
     for idx, opt in enumerate(options_list):
