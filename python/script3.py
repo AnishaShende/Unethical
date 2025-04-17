@@ -7,7 +7,8 @@ from selenium.webdriver.chrome.options import Options
 
 # --- Your links go here ---
 links = [
-    "https://www.coursera.org/learn/hands-on-introduction-to-linux-commands-and-shell-scripting/lecture/sc6S0/introducing-linux-and-unix",
+    "https://www.coursera.org/learn/test-and-behavior-driven-development-tdd-bdd/lecture/QKSUR/the-importance-of-testing",
+    "https://www.coursera.org/learn/test-and-behavior-driven-development-tdd-bdd/lecture/91maE/running-tests-with-nose"
 ]
 
 # Setup Chrome to connect with debugging instance

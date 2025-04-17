@@ -34,7 +34,11 @@ driver = webdriver.Chrome(options=chrome_options)
 
 # Step 1: Open the window/browser
 # driver = webdriver.Chrome()  # or use Edge/Firefox depending on your setup
-driver.get("https://www.coursera.org/learn/python-for-applied-data-science-ai/assignment-submission/kzCcY/practice-quiz-loops/attempt")
+
+print("Please enter the Coursera quiz URL:")
+quiz_url = input("URL: ").strip()
+
+driver.get(quiz_url)
 time.sleep(10)
 
 # # Scroll randomly
