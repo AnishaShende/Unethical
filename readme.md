@@ -67,10 +67,14 @@ You need to allow Selenium to interact with your existing Chrome profile. Here�
 
    On Windows:
 
+  (General)
    ```bash
    chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\chrome-temp"
    ```
-
+  (Use below command [replace your username] also check your profile name in case of multiple profiles on chrome)
+  ```bash
+  "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\Users\[Anisha]\AppData\Local\Google\Chrome\User Data" --profile-directory="Profile 2"
+  ```
    On Mac/Linux:
 
    ```bash
@@ -118,6 +122,10 @@ Run the script using the command below:
 ```bash
 python script.py
 ```
+(script2.py for quiz and script3.py for video automation)
+
+After executing, when prompted enter the url of the quiz webpage after clicking on start quiz button.
+Example link: https://www.coursera.org/learn/application-security-for-developers-devops/assignment-submission/SBoXR/graded-quiz-final-project/attempt
 
 This will:
 
@@ -170,4 +178,4 @@ Once everything is set up and running, you'll be able to:
 
 ### Final Thoughts:
 
-This script is designed to automate a part of the learning process and should be used responsibly. Make sure to review the answers and understand the questions yourself! 😊
+Disclaimer: This script is intended purely for fun and to assist with the learning process. Please use it responsibly. Always review the answers and make sure you understand the questions yourself. If you notice any errors or issues, feel free to reach out to me. 😊
